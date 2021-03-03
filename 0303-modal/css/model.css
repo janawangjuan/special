@@ -1,0 +1,57 @@
+body,html{
+	padding:0; margin: 0;
+	height: 100%;
+}
+div, h1,p,ul,li,input,button,h2{ margin:0;padding:0; box-sizing:border-box;}
+li{list-style: none;}
+.clearfix:after{  content: "";   display: block;   height: 0;   clear: both;   visibility: hidden;    }
+a{ text-decoration: none; color: #333;}
+.float-L{float: left;}
+.float-R{float:right;}
+.public-width{width:62.2%; margin:auto;}
+.widthImg{width: 100%; display: inherit;}
+.modal0303{width: 100%;height: 100%; background-color: rgba(0,0,0,0.6);position: fixed;left:0;top:0;}
+.modal0303 .inner-box0303{ width: 5.4rem; height: 6.83rem;background:url(../img/29modal-bg.png) no-repeat center/cover; background-size: 100% 100%;   padding-top: 0.5rem;}
+.modal0303 .inner-box0303 .inner-title{text-align: center; font-size: 0.4rem; font-weight: 700;color: #c23b21;}
+
+.modal0303 .inner-box0303 .inner-title span{font-weight: 400; margin:0 0.05rem;}
+.modal0303 .inner-box{max-width: 94%;  position: absolute; top:50%;left: 50%; transform: translate(-50%,-50%); font-size: 0.2rem; display: none;}
+.modal0303 .inner-box0303 .sub-title{font-size: 0.16rem; color: #c23b21; text-align: center; margin: 0.03rem auto;}
+
+.modal0303 .inner-box0303 .form{max-width: 90%; width:4.1rem; margin: auto; text-align: center; font-size: 0.24rem;}
+.modal0303 .inner-box0303 .bottom-img{position: absolute;width: 100%;left:-0.1rem;bottom:-0.1rem;}
+.modal0303 .inner-box0303 .form .form-input{width: 100%; background-color: #fff;position: relative; color: #c75439; display: flex; flex-direction: row; justify-content: left; font-size: 0.16rem;margin-bottom: 0.2rem;line-height: 0.45rem; border-radius: 50px; padding-left: 0.2rem;}
+.modal0303 .inner-box0303 .form .form-input input{width: 77%;  height: 0.45rem;line-height: 0.45rem; outline: none; border: none; border-radius: 0 50px 50px 0;}
+.modal0303 .inner-box0303 .form .sendCodes{position: absolute;z-index: 2; right: 0.1rem; top:50%; transform: translateY(-50%);background-color: #c75439; color: #fff; border-radius: 50px; padding: 0.04rem 0.12rem; outline: none; border: none;}
+.modal0303 .inner-box0303 .tip-txt{font-size: 0.14rem; color: #c75439; text-align: center;}
+.modal0303 .inner-box0303 .form-btn{width: ;height: ;background:url(../img/btn29-btn.png) no-repeat center/cover;background-size: 100% 100%; color: #fff; outline: none; border: none;border: none; position: absolute;left:50%;transform: translateX(-50%); bottom: -0.15rem; width: 2.56rem; height: 0.66rem;letter-spacing: 0.01rem; font-weight: 700; font-size: 0.24rem;}
+/* 折扣券 */
+.coup-detail{width: 3.88rem !important; height: 0.86rem !important;background: url(../img/29modal-coubg.png) no-repeat center/cover; background-size: 100% 100%; margin:0.1rem auto;display: flex; flex-direction: row; justify-content: space-between; position: relative;}
+.coup-detail .left{font-size: 0.48rem; font-weight: 700; color: #dd2804; width: 40%; padding-top:0.06rem; text-align: center;}
+.coup-detail .right{font-size: 0.16rem; color: #333; width: 54%; padding-top: 0.1rem; padding: 4% 0; display: flex; flex-direction: column; justify-content: space-between;}
+.coup-detail  .icon-suc{width: 0.3rem; left:-0.15rem;position: absolute;top:50%;transform: translateY(-50%); display: none;}
+.coup-detail.active .icon-suc{display: block;}
+.coup-detail .right button{background-color: #ffe8cd; border-radius: 50px; color: #d99a4e; font-size: 0.12rem; outline: none; border: none;padding:0.02rem 0.1rem;}
+.modal0303 .inner-box0303 .coup-box{width: 4.72rem; height: 2.08rem; background: url(../img/29modal-bg2.png) no-repeat center/cover; background-size: 100% 100%; max-width:90%;margin:auto;padding:0.2rem 0 0.4rem; overflow: hidden;}
+.coup-swiper{height: 100%; overflow: hidden}
+
+
+/* 弱提示 */
+#weakTips20210113{position: fixed;left:0;top:0; width: 100%; height: 100%; background-color: transparent;font-size: 0.24rem; display: none;}
+#weakTips20210113 .tipName{position: absolute;left: 50%;top:50%;transform: translate(-50%,-50%);display: inline-block;padding:0.05rem 0.5rem;background-color: rgba(0,0,0,0.7); border-radius: 30px;color: #fff;}
+/* 加载中 */
+#loading20210113{position: fixed;left:0;top:0; width: 100%; height: 100%; background-color: transparent;font-size: 0.24rem; display: none;}
+#loading20210113 .icon-loading{width: 0.8rem;position: absolute;left: 50%;top: 50%; transform: translate(-50%,-50%);}
+
+/* 登录成功或失败 */
+.inner-suc{background-color: #fff; border-radius: 0.12rem; width: 4.5rem; max-width: 72%;padding:0.3rem;text-align: center;font-size: 0.28rem; letter-spacing: 0.02rem; font-weight: 700; color: #e76701;}
+.inner-suc>img{max-width: 50%; margin-bottom: 0.3rem; }
+.inner-suc .know-btn{padding: 0.08rem 0.14rem;
+    background: #e46222;
+    outline: none;
+    border-radius: 50px; cursor: pointer;
+    color: #fff;
+    width: 1.62rem;
+    text-align: center;
+    border: none;
+    margin: 0.3rem auto 0;}
