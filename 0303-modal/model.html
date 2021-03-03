@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="css/model.css">
+	<script src="https://www.zbgedu.com/staticall/js/common/jquery.min.js"></script>
+	<script type="text/javascript" src="js/swiper.min.js"></script>
+	<link rel="stylesheet" href="css/swiper.min.css">
+	<script type="text/javascript" src="js/index.js">
+		
+	</script>
+	<title></title>
+	<script>
+		function setFont(){
+			var whdef = 100/1920;// 表示1920的设计图,使用100PX的默认值
+			var wW = window.innerWidth;// 当前窗口的宽度
+			wW= wW<1200?1200:wW
+			var rem = wW * whdef;// 以默认比例值乘以当前窗口宽度,得到该宽度下的相应FONT-SIZE值
+			$('html').css('font-size', rem + "px");
+		}
+		setFont()
+		$(window).resize(function (){
+			setFont()
+		});
+	</script>
+</head>
+<body>
+	<div class="modal0303">
+		<div class="inner-box0303 inner-box">
+			<h2 class="inner-title">免<span>/</span>费<span>/</span>领<span>/</span>取<span>/</span>大<span>/</span>礼<span>/</span>包</h2>
+			<p class="sub-title">使用有效期：2020.1.18-2020.2.2</p>
+			<div class="coup-box ">
+				<div class="coup-swiper swiper-container ">
+					<div class="swiper-wrapper">
+						<div class="coup-detail swiper-slide" data-coupid='1'>
+							<img src="img/icon-suc.png" class="icon-suc" alt="">
+							<div class="left">8折</div>
+							<div class="right">
+								<p>财经金融人才进化营</p>
+								<p><button>专属优惠券</button></p>
+							</div>
+						</div>
+						<div class="coup-detail swiper-slide"  data-coupid='2'>
+							<img src="img/icon-suc.png" class="icon-suc" alt="">
+							<div class="left">8折</div>
+							<div class="right">
+								<p>财经金融人才进化营</p>
+								<p><button>专属优惠券</button></p>
+							</div>
+						</div>
+						<div class="coup-detail swiper-slide"  data-coupid='3'>
+							<img src="img/icon-suc.png" class="icon-suc" alt="">
+							<div class="left">8折</div>
+							<div class="right">
+								<p>财经金融人才进化营</p>
+								<p><button>专属优惠券</button></p>
+							</div>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+			
+			<!-- 表单 -->
+			<div class="form">
+				<div class="form-input">
+					<label>手机号：</label>
+					<input type="text" placeholder="请在此处输入手机号" id="phone0129">
+				</div>
+				<div class="form-input">
+					<label>验证码：</label>
+					<input type="text" placeholder="请在此处输入验证码" id="code0129">
+					<button type="button" class="sendCodes" id="getCode0129">获取验证码</button>
+				</div>
+			</div>
+			<p class="tip-txt">*领取成功后请至【会员中心】-【我的优惠券】账户中查看</p>
+			<img src="img/29modal-bg3.png" class="bottom-img" alt="">
+			<button class="form-btn" id="loginBtn0129">免费领取</button>
+			
+		</div>
+		<!-- 成功 -->
+		<div class="inner-suc inner-box">
+			<img src="img/icon-right.png" alt="">
+			<p>恭喜！成功了</p>
+		</div>
+		<!-- 失败 -->
+		<div class="inner-suc inner-box">
+			<img src="img/icon-error.png" alt="">
+			<p>很遗憾，失败了</p>
+			<p><button type="button" class="know-btn">我知道了</button></p>
+		</div>
+	</div>
+	<!-- 弱提示 -->
+	<div id="weakTips20210113">
+		<p class="tipName">弱提示内容</p>
+	</div>
+	<!-- 加载中 -->
+	<div id="loading20210113">
+		<img src="img/icon-loading.png" class="icon-loading" alt="">
+	</div>
+	
+	
+	
+</body>
+</html>
