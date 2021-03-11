@@ -1,0 +1,104 @@
+.container.test-center { background: #f2f3f4; }
+
+.container.test-center .banner { width: 100%; height: 3.9rem; background: url(../image/banner.jpg) no-repeat center/cover; padding-top: 1.02rem; padding-left: 0.35rem; font-size: 0.22rem; }
+
+.container.test-center .banner h1 { font-size: 0.68rem; color: #fff; font-weight: 400; margin-bottom: 0.25rem; }
+
+.container.test-center .banner .select-point { display: inline-block; color: #333333; position: relative; }
+
+.container.test-center .banner .select-point p { display: inline-block; padding: 0px 0.16rem; height: 0.44rem; line-height: 0.44rem;  border-radius: 20px; text-overflow: ellipsis; white-space: nowrap; overflow: hidden; background-color: #fff; padding-right: 0.32rem; }
+
+.container.test-center .banner .select-point p:hover i { -webkit-transform: rotate(180deg); -ms-transform: rotate(180deg); transform: rotate(180deg); -webkit-transform-origin: 0.09rem -0.07rem; -ms-transform-origin: 0.09rem -0.07rem; transform-origin: 0.09rem -0.07rem; }
+
+.container.test-center .banner .select-point p i { position: absolute; width: 0.12rem; display: inline-block; height: 2px; -webkit-transition: all .4s; transition: all .4s; margin: 0rem 0.07rem; top: 0.25rem; right: 0.07rem; }
+
+.container.test-center .banner .select-point p i:before, .container.test-center .banner .select-point p i:after { content: ''; width: 100%; position: absolute; height: 2px; top: -0.07rem; background: #333333; }
+
+.container.test-center .banner .select-point p i:before { -webkit-transform: rotate(45deg); -ms-transform: rotate(45deg); transform: rotate(45deg); }
+
+.container.test-center .banner .select-point p i:after { -webkit-transform: rotate(-45deg); -ms-transform: rotate(-45deg); transform: rotate(-45deg); left: 0.07rem; }
+
+.container.test-center .banner .select-point .list-ul {background:#fff !important; display: none; position: absolute; left: 10%; border: 1px solid #ccc; border-top: none;   overflow-y: scroll; z-index: 2; max-height:4rem;}
+
+.container.test-center .banner .select-point .list-ul li { padding: 0px 10px; width: 100%; line-height: 0.5rem; background: #fff; color: red; border-bottom: 1px solid #ccc; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+
+.container.test-center .banner .select-point .list-ul li:last-child { border-bottom: none; }
+
+.container.test-center .banner .weather { margin-top: 0.31rem; font-size: 0.22rem; color: #fff; }
+
+.container.test-center .banner .weather .img { width: 0.3rem; vertical-align: middle; }
+
+.container.test-center .sub-nav { background: #fff; }
+
+.container.test-center .sub-nav .top { padding: 0.18rem 0.35rem 0.36rem 0.35rem; border: 0.01rem solid #f2f3f4; font-size: 0.22rem; }
+
+.container.test-center .sub-nav .top .browse-span { color: #666666; }
+
+.container.test-center .sub-nav .top .browse-a { font-size: 0.26rem; display: inline-block; text-align: center; width: 1.9rem; height: 0.48rem; color: #555555; line-height: 0.48rem; background-color: #f2f3f4; border-radius: 10px; margin: 0rem 0.04rem; }
+
+.container.test-center .sub-nav .question { padding: 0.2rem 0.35rem; margin-bottom: 0.2rem; }
+
+.container.test-center .sub-nav .question .left { font-size: 0.26rem; color: #333333; border-right: 0.01rem solid #f2f3f4; width: 25%; float: left; padding: 0.2rem; padding-left: 0rem; }
+
+.container.test-center .sub-nav .question .left .ask { position: relative; padding: 0.04rem 0.07rem; color: #fff; background-color: #6ba1fc; display: inline-block; border-radius: 3px; }
+
+.container.test-center .sub-nav .question .left .ask:before { content: ''; border-right: 0.13rem solid transparent; border-top: 0.12rem solid #6ba1fc; position: absolute; left: 0.1rem; bottom: -0.1rem; }
+
+.container.test-center .sub-nav .question .right { float: left; width: 75%; padding-left: 0.2rem; }
+
+.container.test-center .sub-nav .question .right ul li { overflow: hidden; text-overflow: ellipsis; position: relative; font-size: 0.24rem; white-space: nowrap; line-height: 0.4rem; padding-right: 0.3rem; padding-left: 0.2rem; }
+
+.container.test-center .sub-nav .question .right ul li .circluar { top: 50%; -webkit-transform: translateY(-50%); -ms-transform: translateY(-50%); transform: translateY(-50%); position: absolute; width: 0.08rem; height: 0.08rem; border-radius: 8px; background-color: #6ba1fc; left: 0px; }
+
+.container.test-center .sub-nav .question .right ul li:before, .container.test-center .sub-nav .question .right ul li:after { position: absolute; content: ''; width: 0.38rem; height: 0.2rem; }
+
+.container.test-center .sub-nav .question .right ul li:before { right: 0px; top: 0px; border-right: 0.01rem solid #cccccc; -webkit-transform: rotate(45deg); -ms-transform: rotate(45deg); transform: rotate(45deg); }
+
+
+.container.test-center .sub-nav .question .right ul li:after { right: 0.03rem; top: 0.13rem; border-right: 0.01rem solid #cccccc; -webkit-transform: rotate(-45deg); -ms-transform: rotate(-45deg); transform: rotate(-45deg); }
+
+.container.test-center .test-data-h { color: #333333; text-align: center; margin-bottom: 0.1rem; }
+
+.container.test-center .test-data-p { font-size: 0.18rem; color: #999999; line-height: 0.35rem; text-align: center; }
+
+.container.test-center .test-data { font-size: 0.32rem; padding: 0.35rem; background-color: #fff; }
+
+.container.test-center .test-data .calendar-box { width: 94%; margin: 0.2rem auto; border-radius: 7px; -webkit-box-shadow: 0px 0px 0.1rem #ccc; box-shadow: 0px 0px 0.1rem #ccc; }
+
+.container.test-center .attention { margin-top: 0.2rem; font-size: 0.32rem; background-color: #fff; padding-top: 0.35rem; }
+
+.container.test-center .attention .list-item { padding: 0.3rem 0.35rem; border-bottom: 1px solid #e7e7e7; }
+
+.container.test-center .attention .list-item:nth-last-child(1) { border-bottom: none; }
+
+.container.test-center .attention .list-item .list-title { font-size: 0.22rem; color: #3b3b3b; }
+
+.container.test-center .attention .list-item .list-title em { display: inline-block; width: 0.4rem; font-style: normal; height: 0.4rem; border-radius: 20px; color: #fff; margin-right: 0.1rem; font-size: 0.12rem; text-align: center; line-height: 0.4rem; background: #6ba1fc; }
+
+.container.test-center .attention .list-item .list-txt { color: #999999; font-size: 0.22rem; padding-left: 0.5rem; margin-top: 0.07rem; }
+
+.container.test-center .traffic { font-size: 0.32rem; padding: 0.35rem; margin-top: 0.2rem; background: #fff; }
+
+.container.test-center .traffic .baidu-map { width: 100%; margin-top: 0.3rem; border: 1px solid #f7f7f7; border-radius: 4px; }
+
+.container.test-center .traffic .baidu-map #allmap { width: 100%; height: 3.1rem; }
+
+.container.test-center .traffic .baidu-map #allmap .anchorBL { display: none; }
+
+.container.test-center .traffic .baidu-map .map-txt { padding: 0.25rem 0.3rem; font-size: 0.24rem; color: #333333; }
+
+.container.test-center .traffic .baidu-map .map-txt p { margin-bottom: 0.1rem; }
+
+.container.test-center .contact { margin-top: 0.2rem; text-align: center; color: #fff; width: 100%; background: url(../image/call-us.jpg) no-repeat center/cover; padding: 0.3rem; }
+
+.container.test-center .contact .con-title { font-size: 0.32rem; font-weight: 700; letter-spacing: 2px; margin-bottom: 0.07rem; }
+
+.container.test-center .contact .sub-con-til { font-size: 0.18rem; letter-spacing: 0.01rem; line-height: 0.38rem; text-align: left; margin-bottom: 0.18rem;}
+
+.container.test-center .contact > div { text-align: left; margin-bottom: 0.07rem; }
+
+.container.test-center .contact .p1 { font-size: 0.26rem; }
+
+.container.test-center .contact .p2 { font-size: 0.22rem; color: #dddddd; }
+
+.container.test-center .footers { background: #272c32; font-size: 0.22rem; padding: 0.2rem 0rem; text-align: center; color: #fff; letter-spacing: 2px; }
