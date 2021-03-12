@@ -1,0 +1,163 @@
+a{text-decoration: none; }
+.zbg-center-210113 a:focus{outline: none;background: transparent;}
+html,body,div,p,button,ul,li,input{box-sizing: border-box;margin:0;padding:0;}
+li{list-style: none;}
+.widthImg{width:100%;display: inherit;}
+.zbg-center-210113{width:100%;max-width: 750px; min-width: 320px;margin:auto;background: #c33239;}
+html{font-size: 100px;}
+/*主题部分*/
+.zbg-center-210113 .center-titleimg{width: 7.06rem; margin: auto;display: block;}
+.zbg-center-210113 .ruler-p{padding-right: 0.4rem;text-align: right;font-size: 0.16rem;margin-top: 0.15rem;}
+.zbg-center-210113 .btn-ruler{width: 1.46rem;height: 0.5rem;text-align: center;display: inline-block;outline: none; border:2px solid #ffe174;border-radius: 0.18rem;color: #ffe174;font-size: 0.18rem;font-weight: 700;letter-spacing: 0.01rem;background: transparent;animation: toBig 1s linear infinite;}
+
+/*财经专区*/
+.zbg-center-210113 .finance {font-size: 0.16rem;}
+.zbg-center-210113 .finance .finance-box{position: relative;padding-bottom: 0.62rem; }
+.zbg-center-210113 .finance .finance-tab{background: url(../img/wap-fintitle-bg.png) no-repeat center/cover;width: 6.36rem;height: 1.4rem;display: flex;flex-direction: row;justify-content: space-between; position: absolute;left:50%;transform: translateX(-50%); top:0; padding:0 0.3rem;}
+.zbg-center-210113 .finance .finance-tab a>img.nomal{display: block;}
+.zbg-center-210113 .finance .finance-tab a.active img.nomal{display: none;}
+.zbg-center-210113 .finance .finance-tab a.active img.light{display: block;}
+.zbg-center-210113 .finance .finance-tab a>img.light{display: none;}
+.zbg-center-210113 .finance .finance-tab>a{width:1.9rem;line-height: 1.1rem;padding-top:0.22rem;} 
+.zbg-center-210113 .finance .finance-tab>a>img{width:100%;}
+.zbg-center-210113 .finance .inner-box {background: url(../img/wap-box-middle.jpg) repeat-y center/contain; padding:0 0.5rem; display: flex; flex-direction: row; justify-content: space-between;flex-wrap: wrap;position: relative;z-index: 1;}
+.zbg-center-210113 .finance .inner-box .inner-item{width:3.2rem;padding:0.2rem;height: 3.61rem;   background:url(../img/wap-course-bg.png) no-repeat center/cover;}
+.zbg-center-210113 .finance .inner-box .inner-item .course-name{color: #4f1915; font-size: 0.24rem; letter-spacing: 0.01rem; font-weight: 700;height: 0.8rem;margin-top:0.04rem;}
+.zbg-center-210113 .finance .inner-box .inner-item sup{font-size: 0.10rem;}
+.btn-all{display: flex; flex-direction: row; justify-content: space-between;}
+.btn-all>a{font-size: 0.22rem;color: #fff;display: inline-block;padding:0.03rem 0.18rem;border-radius: 40px; white-space: nowrap;}
+.btn-all>a.left{background: linear-gradient(to right,#f27508,#fc9e25);}
+.btn-all>a.right{background: linear-gradient(to right,#f93733,#fe655e);}
+.pos-bot{position: absolute;bottom: 0;}
+
+/*金融专区*/
+.zbg-center-210113 .finance.section2{margin-top: 0.3rem;}
+.zbg-center-210113 .finance.section2 .finance-tab>a{width:2.83rem;}
+
+/*更多*/
+.zbg-center-210113 .finance.section3{margin-top:0.3rem;}
+.zbg-center-210113 .finance.section3 .finance-box{padding-bottom:0.3rem;}
+
+/*进化营*/
+.zbg-center-210113 .finance.section5{position: relative;}
+.zbg-center-210113 .finance.section5 .link-a{height: 0.5rem;position: absolute; width: 1.7rem;   bottom: 0.72rem; right: 0.81rem;pointer-events: none;display: none;}
+
+
+/*元宝*/
+.zbg-center-210113 .finance.section4{margin-top:0.3rem;}
+.zbg-center-210113 .finance.section4 .finance-box .finance-tab{background: url(../img/wap-fintitle-bg2.png) no-repeat center/cover;}
+.action-p{margin-bottom: 0.15rem;}
+.action-p .step-name{width: 1.46rem;
+    height: 0.5rem;
+    text-align: center;
+    display: inline-block;
+    outline: none;
+    border: 2px solid #ffe174;
+    border-radius: 0.18rem;
+    color: #ffe174;
+    font-size: 0.18rem;
+    font-weight: 700;
+    letter-spacing: 0.01rem;
+    background: transparent}
+.zbg-center-210113 .finance.section4 .finance-box .action-step{padding: 0.1rem 0.6rem 0;display: block;}
+.swiper-prize{margin-top: 0.1rem; margin-bottom: 0.3rem;   width: 6.3rem;    border-radius: 0.08rem;    padding: 0.1rem 0.1rem 0.2rem;    background: url(../img/swiper-bg.png) no-repeat;
+    background-size: 100% 100%;
+    }
+.swiper-prize .swiper-pagination-bullet{background: #999; opacity: 1;}
+.swiper-prize  .swiper-pagination-bullet.swiper-pagination-bullet-active{background:#fff;}
+.swiper-prize .prize-cont .swiper-pagination{bottom:0rem !important;}
+.swiper-prize .swiper-container{padding:0.15rem 0rem 0.25rem;}
+.action-step .marginBot{margin-bottom: 0.3rem;}
+/* .swiper-prize .swiper-slide{width: 1.61rem !important;} */
+.swiper-prize .swiper-slide>img{width: 100%;}
+
+.action-step .code-boxbot{position: relative;}
+.code-wxModal{position: absolute; background-color: rgba(0,0,0,0.6);width:58%;height:72%;left:50%;transform: translateX(-50%);top:16%;text-align: center; padding-top:1.1rem; color:#fff;font-weight: 700;letter-spacing: 0.01rem;font-size: 0.18rem;line-height: 0.40rem; box-sizing: border-box;}
+
+.action-step .code-img{width:75%;display: block;margin:-0.6rem auto 0;}
+.step-name.btn-ruler0113{animation: toBig 1s linear infinite}
+
+
+
+
+
+/*弹框*/
+.modal-box210113{position: fixed;left:50%;top:0;bottom: 0;right:0;background: rgba(0,0,0,0.85);width:100%;height: 100%;z-index: 999; max-width: 750px; transform: translateX(-50%); display: none;}
+.modal-box210113 .inner-box{position: absolute;left:50%;top:50%;transform: translate(-50%,-50%);}
+.ruler-modal{width:100%;font-size: 0.26rem;}
+
+/*.ruler-modal{width:100%;background: url(../img/wap-line-bg.png) no-repeat center/cover; font-size: 0.26rem;}*/
+.icon-lines1{position: absolute;left:50%;top:57%; transform: translate(-50%,-50%)  scale(1.5);width:100%; animation: toShow 2s linear infinite;z-index: -1;}
+
+.ruler-txt{min-height: 3rem; background: url(../img/wap-ruler-middle.png) repeat-y center/contain;padding:0 0.8rem;line-height: 0.4rem; color: #8f3127; margin-top:-1px;margin-bottom: -1px;}
+.ruler-txt li{position: relative;padding-left:0.4rem;margin-bottom: 0.07rem;}
+.ruler-txt li:nth-last-child(1){margin-bottom: 0;}
+.ruler-txt li>span{width:0.3rem;height: 0.3rem;font-size: 0.26rem;font-weight: 700;border-radius: 80px;border:1px solid #8f3127;position: absolute;left:0;top:0.03rem;text-align: center;line-height: 0.3rem;}
+.wap-close{position: absolute;left:50%;transform: translateX(-50%) translateY(50%);bottom:0; width: 0.54rem;}
+
+/*登录弹框*/
+.login-modal{width:100%;}
+.login-modal .form{background:#fcb31c; border-radius: 0.2rem;width:5.94rem;margin:auto;padding:0.2rem;}
+.login-modal .form .form-inner{background: url(../img/wap-ruler-middle2.png) #feebaf repeat-y center/contain;border-radius: 0.2rem; padding-top:0.8rem; padding-bottom: 0.4rem;}
+.login-modal .form .form-title{width: 5.31rem;position: absolute;top:-0.4rem;left:50%;transform: translateX(-50%);}
+.input-p{position: relative;border-radius: 40px; border: 1px solid #f7cca9; box-shadow: 0 0 0.03rem 0.03rem #f4d8ab; background: #fff; width:4.54rem;height: 0.7rem;margin:0 auto 0.4rem;font-size: 0.18rem;padding-left: 0.6rem;}
+.input-p>img{position: absolute;top:50%;transform: translateY(-50%);width:0.49rem;left:0.1rem;}
+.input-p input{outline: none;height: 100%;}
+.input-p input#phone0113{width: 100%;border: none;border-radius: 50px; padding-left: 0.1rem;}
+.code-p{width:4.54rem;height: 0.7rem;margin:0 auto 0.4rem;font-size: 0.18rem;display: flex;flex-direction: row;justify-content: space-between;position: relative;}
+.code-p .left{width:2.67rem;padding-left:0.6rem; background: #fff;border-radius: 50px;border: 1px solid #f7cca9; box-shadow: 0 0 0.03rem 0.03rem #f4d8ab;}
+.code-p #getCode0113{width: 1.75rem;height: 0.7rem;background: linear-gradient(to bottom,#f05636,#b51403);box-shadow: 0 0 0.03rem 0.03rem rgba(0,0,0,0.3); border: 1px solid #f08e3e;outline: none;border-radius: 30px;color: #fff;}
+.code-p .left img{position: absolute;top:50%;transform: translateY(-50%);left:0.1rem;width: 0.47rem;}
+.code-p .left input{width:100%;border-radius: 40px;border:none;outline: none;height: 100%;padding-left: 0.1rem;}
+.btn-p{font-size: 0.16rem;text-align: center;margin-top:0.3rem}
+.btn-p button{height: 0.7rem;background: linear-gradient(to bottom,#f05636,#b51403);box-shadow: 0 0 0.03rem 0.03rem rgba(0,0,0,0.3); border: 1px solid #f08e3e;outline: none;border-radius: 30px;color: #fff;width:4.54rem;}
+.login-modal .wap-close{bottom: -0.35rem;}
+
+/*登录成功*/
+.icon-suc{width: 1.19rem;display: block;margin:auto}
+.state-suc{font-size: 0.39rem;font-weight: 700;color: #e05c44;text-align: center;letter-spacing: 0.1rem;}
+.state-error{font-size: 0.24rem;color: #fff;letter-spacing: 0.01rem;color: #e05c45;text-align: center;margin-top:0.2rem;}
+.icon-lines2{position: absolute;left:50%;top:50%; transform: translate(-50%,-50%);width:100%; animation: toShow 2s linear infinite;z-index: -1;}
+
+/*规则*/
+.courseRuler .addSup{margin-bottom: 0.12rem;}
+.courseRuler .addSup>span{margin-top:0.13rem;}
+
+/*弱提示*/
+#weakTips20210113{position: fixed;left: 50%; top:0;width: 100%;height: 100%; background: transparent;z-index: 9998; display: none; max-width: 750px; transform: translateX(-50%);}
+#weakTips20210113 .tipName{position: absolute;left:50%;top:50%;transform: translate(-50%,-50%);padding:0.2rem 0.4rem;background: #00032B;border-radius: 0.12rem; color: #fff;text-align: center;font-size: 0.32rem;max-width: 70%;}
+
+/*加载中*/
+#loading20210113{position: fixed;left: 50%; top:0;width: 100%;height: 100%;z-index: 9999;background: rgba(0,0,0,0.1); display: none;max-width: 750px; transform: translateX(-50%);}
+#loading20210113 .loadingImg{position: absolute;left:50%;top:50%;transform: translate(-50%,-50%);width:0.8rem; animation: toRotate 1s linear infinite;}
+
+
+
+
+
+
+
+
+/*动画*/
+@keyframes toBig{
+	from{transform: scale(1);}
+	50%{transform: scale(1.1);}
+	to{transform: scale(1);}
+}
+@keyframes toOpacity{
+	from{background-size: 100%;}
+	50%{background-size: 110%;}
+	to{background-size: 100%;}
+}
+@keyframes toShow{
+	0{opacity: 1;}
+	45%{opacity: 0.3;}
+	50%{opacity: 0;}
+	55%{opacity:0.3}
+	100%{opacity:1}
+}
+@keyframes toRotate{
+	0{transform:translate(-50%,-50%)  rotate(0);}
+	25%{transform:translate(-50%,-50%) rotate(180deg);}
+	100%{transform:translate(-50%,-50%) rotate(360deg);}
+}
