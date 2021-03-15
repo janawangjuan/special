@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<title>专题</title>
+	<meta name="Description" content=""/>
+	<meta name="Keywords" content=""/>
+	
+	<link rel="stylesheet" href="css/index.css" />
+	
+	<!--图片懒加载-->
+	<script src="https://www.zbgedu.com/staticall/js/common/jquery.min.js"></script>
+	<script src="./js/jquery.lazyload.js"></script>
+	<!-- <script src="js/index.js"></script> -->
+	
+
+	
+	<script>
+		function setFont(){
+			var whdef = 100/1920;// 表示1920的设计图,使用100PX的默认值
+			var wW = window.innerWidth;// 当前窗口的宽度
+			wW= wW<1200?1200:wW
+			var rem = wW * whdef;// 以默认比例值乘以当前窗口宽度,得到该宽度下的相应FONT-SIZE值
+			$('html').css('font-size', rem + "px");
+		}
+		setFont()
+		$(window).resize(function (){
+			setFont()
+		});
+	</script>
+</head>
+<body>
+	<div class="zbg-note-0313">
+		<!-- banner -->
+		<div class="banner">
+			<img src="image/banner.png" class="banner-img" alt="">
+		</div>
+		<div class="sub-banner">
+			<p>进入快速职场通道，开启挑战之旅</p>
+			<p>体验真实职场招聘，提升求职技能</p>
+			<p>结识全国高校精英，赢取名企实习</p>
+			<p>对话企业高管评委，经历实战蜕变</p>
+			<p>收获大型商赛证书，打造吸睛简历</p>
+		</div>
+		
+		<!-- 比拼 -->
+		<div class="compare">
+			<div class="comp-flex">
+				<div class="left">
+					<p class="p1">你想要的，尽在</p>
+					<p class="p2">ACCA全国就业力大比拼</p>
+					
+					
+					<p class="p3">ACCA 2021 JOB HUNTING COMPETITION(JHC)</p>
+				</div>
+				<div class="right">
+					<img src="image/course-acca1.jpg" alt="">
+					<img src="image/course-acca2.jpg" alt="">
+					<img src="image/course-acca3.jpg" alt="">
+					<img src="image/course-acca4.jpg" alt="">
+				</div>
+			</div>
+		</div>
+		<!-- 大赛简介 -->
+		<div class="match">
+			<div class="match-box">
+				<div class="match-left">
+					<p class="title">大赛简介</p>
+					<p class="margin-bot">由ACCA(特许公认会计师公会)举办的“全国就业力大比拼”(JOBHUNTING COMPETITION，简称JHC)比赛立足于搭建校企沟通展示平台，帮助大学生全方位提高就业能力。</p>
+					<p>该赛事已连续举办17年，在ACCA众多认可雇主的大力支持下，模拟正式工作申请流程，通过在线职业能力测评、小组案例分析、现场演讲陈述等多元化形式营造真实商业挑战氛围，助力数万名有志成为商业精英的学子掌握求职和面试技巧，提升综合素质，帮助他们在未来职场上找到理想的工作。</p>
+				</div>
+			</div>
+		</div>
+		<div class="match-red-top">
+			<div class="public-width">
+				<div class="item-match">
+					<img src="image/number-img1.jpg" class="number-img" alt="">
+					<p class="match-h1">全赛程辅导<br/>挺你一路晋级</p>
+					<p class="match-h2">超强导师天团全程陪伴式辅导训练</p>
+				</div>
+				<div class="item-match">
+					<img src="image/number-img2.jpg" class="number-img" alt="">
+					<p class="match-h1">老司机<br/>带你弯道超车</p>
+					<p class="match-h2">冲关助力天团分享比赛经验，助你一臂之力</p>
+				</div>
+				<div class="item-match">
+					<img src="image/number-img3.jpg" class="number-img" alt="">
+					<p class="match-h1">纵享<br/>DOUBLE奖金 </p>
+					<p class="match-h2">狂撒与大赛协会等额奖金</p>
+				</div>
+				<div class="item-match">
+					<img src="image/number-img4.jpg" class="number-img" alt="">
+					<p class="match-h1">进阶课程<br/>我们买单</p>
+					<p class="match-h2">安永实习实训机会中博考研英语<br/>助力继续深造</p>
+				</div>
+			</div>
+			
+		</div>
+		<div class="match-tip">
+			<img src="image/icon-trggle.png" alt="">
+			中博教育可以为你提供的支持
+			<img src="image/icon-trggle.png" alt="">
+		</div>
+		
+		<!-- 辅导老师 -->
+		<div class="coach-teach">
+			<div class="pos-red"></div>
+			<div class="coach-allperson public-width">
+				<p class="jhc-pub-title">大咖辅导天团 </p>
+				<p class="coach-teach-sub">中博教育将为入围的中博教育代表队配备优佳导师， <br/>指导学生案例分析、小组面试等众多比赛环节。 </p>
+				<img src="image/coa-teach-img1.jpg" class="teach-img1" alt="">
+			</div>
+			
+			<div class="coach-allperson margTop public-width">
+				<p class="jhc-pub-title">冲关助力天团 </p>
+				<p class="coach-teach-sub">赛事冲关助力天团带你一路通关，冲破阻碍。  </p>
+				<img src="image/coa-teach-img2.jpg" class="teach-img1" alt="">
+			</div>
+		</div>
+		
+		
+		<!-- 奖学金 -->
+		<div class="scholarship">
+			<p class="jhc-pub-title">中博教育提供与ACCA协会等额奖金</p>
+			<p class="event-sub-title">金榜题名=DOUBLE奖金</p>
+			<div class="table-pub public-width">
+				<p class="title1">区域决赛奖项</p>
+				<div class="table-border">
+				<table>
+					<thead>
+						<tr>
+							<td>奖项设置</td>
+							<td>奖金金额</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>冠军团队（1队4人）</td>
+							<td class="team-td-detail">
+								<span>6,000元人民币<br/>(ACCA协会提供)</span>
+								<span class="add">+</span>
+								<span class="red-color">6,000元人民币<br/>(中博提供）</span>
+							</td>
+						</tr>
+						<tr>
+							<td>亚军团队（1队4人）</td>
+							<td class="team-td-detail">
+								<span>4,000元人民币<br/>(ACCA协会提供)</span>
+								<span class="add">+</span>
+								<span class="red-color">4,000元人民币<br/>(中博提供）</span>
+							</td>
+						</tr>
+						<tr>
+							<td>季军团队（1队4人）</td>
+							<td class="team-td-detail">
+								<span>2,000元人民币<br/>(ACCA协会提供)</span>
+								<span class="add">+</span>
+								<span class="red-color">2,000元人民币<br/>(中博提供）</span>
+							</td>
+						</tr>
+						<tr>
+							<td>最佳个人表现奖（1人）</td>
+							<td class="team-td-detail">
+								<span>1,000元人民币<br/>(ACCA协会提供)</span>
+								<span class="add">+</span>
+								<span class="red-color">1,000元人民币<br/>(中博提供）</span>
+							</td>
+						</tr>
+					</tbody>
+					
+				</table>
+				</div>
+			</div>
+			
+			<div class="table-pub public-width">
+				<p class="title1">全国总决赛奖项</p>
+				<div class="table-border">
+				<table>
+					<thead>
+						<tr>
+							<td>奖项设置</td>
+							<td>奖金金额</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>冠军团队（1队4人）</td>
+							<td class="team-td-detail">
+								<span>8,000元人民币<br/>(ACCA协会提供)</span>
+								<span class="add">+</span>
+								<span class="red-color">8,000元人民币<br/>(中博提供）</span>
+							</td>
+						</tr>
+						<tr>
+							<td>亚军团队（1队4人）</td>
+							<td class="team-td-detail">
+								<span>6,000元人民币<br/>(ACCA协会提供)</span>
+								<span class="add">+</span>
+								<span class="red-color">6,000元人民币<br/>(中博提供）</span>
+							</td>
+						</tr>
+						<tr>
+							<td>季军团队（1队4人）</td>
+							<td class="team-td-detail">
+								<span>4,000元人民币<br/>(ACCA协会提供)</span>
+								<span class="add">+</span>
+								<span class="red-color">4,000元人民币<br/>(中博提供）</span>
+							</td>
+						</tr>
+						<tr>
+							<td>最佳个人表现奖（1人）</td>
+							<td class="team-td-detail">
+								<span>2,000元人民币<br/>(ACCA协会提供)</span>
+								<span class="add">+</span>
+								<span class="red-color">2,000元人民币<br/>(中博提供）</span>
+							</td>
+						</tr>
+					</tbody>
+					
+				</table>
+				</div>
+				<p class="gray-tip">*以上各项奖金均为税前金额，发放时由ACCA、中博教育代缴个人所得税-偶然所得。</p>
+			</div>
+		</div>
+		
+		<!-- 提升 -->
+		<div class="boost-box">
+			<div class="jhc-pub-title">助力能力提升，课程免费升级</div>
+			<div class="boost-item">
+				<img src="image/icon-help-img1.png" class="icon-left">
+				<p>获得全国总决赛冠、亚、季军的中博教育学员可赢得：</p>
+				<p class="red-color">ACCA-UOL-SIM伦敦大学专业会计硕士申请服务</p>
+			</div>
+			<div class="boost-item">
+				<img src="image/icon-help-img2.png" class="icon-left">
+				<p>获得全国总决赛最佳个人表现奖的中博教育学员可赢得：</p>
+				<p class="red-color">四大安永国际会计师事务所实训实习机会</p>
+			</div>
+			<div class="boost-item-bottom">
+				<div class="boost-item">
+					<img src="image/icon-help-img3.png" class="icon-left">
+					<p >获得区域决赛冠、亚、季军及区域最佳个人表现奖的中博教育学员可赢得 (2选1）：</p>
+				</div>
+				<div class="boost-flex">
+					<div class="left">
+						<p class="red-color">中博考研英语网络单科直航 <br/>（直播课+录播课）</p>
+						<p>中博考研英语网络单科直航（直播课+录播课）从单词到专项训练帮你夯实基础，从模拟到真题带你熟练考试技巧；班主任全程保驾护航，让考研不迷茫。</p>
+					</div>
+					<div class="right">
+						<p class="red-color">英语听说训练直播课<br/> (附赠雅思英语能力专项测评)</p>
+						<p>雅思英语听力口语入门基础训练+英语听说读写全科测试，全面了解英语学习不足，有的放矢。</p>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+		
+		
+		
+		<!-- 赛事辅导 -->
+		<div class="event-coaching">
+			<p class="jhc-pub-title">中博教育JHC赛事辅导现已全面开启</p>
+			<p class="event-sub-title">非学员向左，学员向右</p>
+			<div class="event-flex public-width">
+				<div class="flex-left"> 
+					<p class="p1"><span class="red-color">非学员</span>请扫描下方二维码加入QQ群,领取中博教育内推名额，参与2021 JHC初赛体验，每个赛区限额100人。</p>
+					<div class="div2">
+						<img src="image/code-event-lefft.jpg" class="code-event" alt="">
+						<p><span class="event-triggle"></span><br/>中博教育2021JHC赛事沟通QQ群 群号：732744409</p>
+					</div>
+				</div>
+				<div class="flex-right">
+					<p class="p1"><span class="red-color">中博教育学员</span>请联系您的学服老师进入学员尊享微信群，私藏JHC大赛资料，通关秘籍都将在群中分享给大家。</p>
+					<div class="event-right-icon">
+						<div>
+							<img src="image/icon-event-left.png" >
+							<p>私藏JHC大赛资料</p>
+						</div>
+						<div>
+							<img src="image/icon-event-right.png" alt="">
+							<p>通关秘籍</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		
+		<!-- 参赛时间细则 -->
+		<div class="competition-time width-all">
+			<div class="public-width">
+				<p class="jhc-pub-title">参赛细则 </p>
+				<div class="comp-time-flex">
+					<div class="time-item item1">
+						<p class="enlist-name"><img src="image/icon-time1.png" class="time-img" alt="">报名条件</p>
+						<p class="enlist-p2">中国大陆地区全日制本科大二及以上在读ACCA注册学员(含硕士研究生)</p>
+					</div>
+					<div class="time-item item2">
+						<p class="enlist-name"><img src="image/icon-time2.png" class="time-img" alt="">报名条件</p>
+						<p class="enlist-p2">即日起至<br/>2021年4月5日(周一)<br/>24:00截止 </p>
+						
+					</div>
+					<div class="time-item item3">
+						<p class="enlist-name"><img src="image/icon-time3.png" class="time-img" alt="">报名方式</p>
+						<p class="enlist-p2 flex-two"><img src="image/code-join.jpg" alt="" class="code-join"><span class="marginTop">识别二维码<br/>进入页面</span></p>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+		
+		
+		
+		<!-- 赛区报名 -->
+		<div class="competition-area public-width">
+			<p class="comp-title">各大赛区报名说明</p>
+			<div class="comp-infor">
+				<img src="image/city-bg.jpg" class="city-bg" alt="">
+				就读于<span>北京、天津、河北、山西、陕西、山东、甘肃、宁夏、青海、内蒙古和新疆</span>的ACCA已注册在校学生(大二及以上年级的本科及硕士研究生)请选择北京赛区参加比赛，如选择其他赛区，其成绩将不予计入。
+				<div class="comp-bot-inner">
+					<p class="comp-bot-title">如有问题，详细咨询</p>
+					<p><img src="image/icon-tel.jpg" class="left-icon1" alt="">ACCA北京办公室：010-65352400转市场部</p>
+					<p><img src="image/icon-wx.jpg" class="left-icon2" alt="">扫右侧二维码，关注<span class="weight700">ACCA华北</span>公众号微信留言</p>
+					<img src="image/code-huabei.jpg" class="code-area" alt="">
+				</div>
+			</div>
+			
+			<div class="comp-infor">
+				<img src="image/city-sh.jpg" class="city-bg" alt="">
+				就读于<span>上海、江苏、浙江、湖北、江西和安徽</span>的ACCA已注册在校学生(大二及以上年级的本科及硕士研究生)请选择上海赛区参加比赛，如选择其他赛区，其成绩将不予计入。
+
+				<div class="comp-bot-inner addTop">
+					<p class="comp-bot-title">如有问题，详细咨询</p>
+					<p><img src="image/icon-wx.jpg" class="left-icon2" alt="">扫右侧二维码，关注<span class="weight700">ACCA华中</span>公众号微信留言</p>
+					<img src="image/code-shanghai.jpg" class="code-area" alt="">
+				</div>
+			</div>
+			<div class="comp-infor">
+				<img src="image/city-guangzhou.jpg" class="city-bg" alt="">
+				就读于<span>广东、福建、海南</span>的ACCA已注册在校学生(大二及以上年级的本科及硕士研究生)请选择广州赛区参加比赛，如选择其他赛区，其成绩将不予计入。
+			
+				<div class="comp-bot-inner addTop">
+					<p class="comp-bot-title">如有问题，详细咨询</p>
+					<p><img src="image/icon-wx.jpg" class="left-icon2" alt="">扫右侧二维码，关注<span class="weight700">ACCA华南</span>公众号微信留言</p>
+					<img src="image/code-huanan.jpg" class="code-area" alt="">
+				</div>
+			</div>
+			
+			<div class="comp-infor">
+				<img src="image/city-chengdu.jpg" class="city-bg" alt="">
+				就读于<span>四川、重庆、河南和西藏</span>的ACCA已注册在校学生（大二及以上年级的本科及硕士研究生）请选择成都赛区参加比赛，如选择其他赛区，其成绩将不予计入。
+				<div class="comp-bot-inner addTop">
+					<p class="comp-bot-title">如有问题，详细咨询</p>
+					<p><img src="image/icon-tel.jpg" class="left-icon1" alt="">ACCA成都办公室：028-86202085</p>     
+				</div>
+			</div>
+			
+			<div class="comp-infor">
+				<img src="image/city-shenyang.jpg" class="city-bg" alt="">
+				就读于<span>辽宁、吉林、黑龙江</span>的ACCA已注册在校学生（大二及以上年级的本科及硕士研究生）请选择沈阳赛区参加比赛，如选择其他赛区，其成绩将不予计入。
+				<div class="comp-bot-inner addTop">
+					<p class="comp-bot-title">如有问题，详细咨询</p>
+					<p><img src="image/icon-tel.jpg" class="left-icon1" alt="">ACCA沈阳办公室：024-31099737</p>      
+				</div>
+			</div>
+			<div class="comp-infor">
+				<img src="image/city-changsha.jpg" class="city-bg" alt="">
+				就读于<span>湖南、云南、广西和贵州</span>的ACCA已注册在校学生（大二及以上年级的本科及硕士研究生）请选择长沙赛区参加比赛，如选择其他赛区，其成绩将不予计入。
+				 
+				<div class="comp-bot-inner addTop">
+					<p class="comp-bot-title">如有问题，详细咨询</p>
+					<p><img src="image/icon-wx.jpg" class="left-icon2" alt="">扫右侧二维码，关注<span class="weight700">ACCA华南</span>公众号微信留言</p> 
+					<img src="image/code-huanan.jpg" class="code-area" alt="">
+				</div>
+			</div>
+			
+		</div>
+		
+		
+		<!-- 中博提醒 -->
+		<div class="width-all zbgTip">
+			<div class="inner-zbg-tip public-width">
+				<p>1.官网报名时，选择在读学校所在赛区进行报名(请务必选对赛区，否则成绩无效)。</p>
+				<p>2.在ACCA ID的选项处如实填写，并按提示完成提交。</div>
+			<img src="image/icon-zbg-tip.png" alt="" class="icon-zbg-tip">
+		</div>
+		
+		<!-- 参赛细则 -->
+		<div class="entry-details">
+			<div class="public-width">
+				<p class="jhc-pub-title">参赛细则 </p>
+				<ul class="txt-ul addBot">
+					<li><span>1</span>凡参加ACCA 2021全国就业力大比拼者，即表示同意授权ACCA将其个人资料转交大赛合作伙伴。</li>
+					<li><span>2</span>所有参赛申请表格须于相应的截止日期之前递交。如涉及参赛作品必须为参赛者的原创作品，不得抄袭他人作品，并确保绝不涉及或侵犯第三方的版权。如参赛者递交作品发生任何侵犯版权行为，一切法律责任及后果由参赛者个人承担，ACCA将不承担任何责任及后果。</li>
+					<li><span>3</span>所有被甄选入复赛、决赛，递交报告摘要且被甄选进入所属分赛区或全国总决赛的案例演示环节的参赛者，必须亲自出席相应的复赛和决赛，不得由他人替代。</li>
+					<li><span>4</span>所有奖金均需缴纳个人所得税，ACCA将为获奖选手代扣税金。凡已报名的参赛者一经被接纳，即表示同意所有比赛相关的条款及细则，并受其约束。</li>
+					<li><span>5</span>所有入围的参赛者，必须同意ACCA保留将其个人资料、相片、简报和视频用作宣传及推广用途。</li>
+					<li><span>6</span>参赛者所提供的资料如有不实或违反以上条款及细则，其ACCA2021全国就业力大比拼的参赛资格将被取消。</li>
+					<li><span>7</span>ACCA对此项比赛的细则及结果保留最终决定权，以及在未事先公布的情况下修订比赛条款及细则的权利。</li>
+				</ul>
+				<p class="jhc-pub-title">学生外出安全责任协议</p>
+				<p class="treaty-sub">为了确保参加2021年ACCA全国就业力大比拼举办期间选手的外出安全，加强安全意识、明确安全责任，参赛学生外出应当遵守以下外出安全责任协议内容：
+</p>
+
+				<ul class="txt-ul">
+					<li><span>1</span>参赛学生参加比赛期间，遵守国家各项法律法规和所在单位的规章制度，服从ACCA工作人员的安排。注意个人人身及财产安全、交通安全，增强安全防范意识，在外出期间的一切安全责任自负。</li>
+					<li><span>2</span>参赛学生应及时向ACCA工作人员提供详细准确的外出地址、联系电话（包括变动后的地址及电话），以便联系，否则因此所延误的与本人有关的一切事宜，责任自负。</li>
+					<li><span>3</span>参赛学生到达比赛举办地点后，若遇到困难随时向ACCA工作人员通报，以便ACCA工作人员能够及时掌握情况并提供帮助。</li>
+					<li><span>4</span>参赛学生按照规定的行程安排计划，自愿参加此次比赛活动、自由安排比赛时间以外的休闲活动，自行安排的休闲活动安全责任自负。</li>
+					<li><span>5</span>参赛学生需按时抵达机场/火车站等出发地点，否则因此所延误班机/班车等相关事宜需由参赛学生自行承担。</li>
+					<li><span>6</span>如果参赛学生因违反本协议以及比赛单位、比赛举办地区的其它一切安全制度、安全条例、操作流程，由自身原因而引起的人身伤亡事故，由参赛学生自己承担全部责任。</li>
+					<li><span>7</span>参赛学生到达比赛举办地点后，确需中途离开或终止比赛活动，必须提出书面申请、征得ACCA工作人员的同意批准，并跟ACCA工作人员办理有关手续后方可离开。否则，由此引发的一切安全责任，由参赛学生本人承担。</li>
+				
+				</ul>
+			</div>
+			<div class="width-all">
+				<div class="public-width">
+					说明：中博教育仅作为2021年JHC赛事全国教育合作伙伴，所有中博学员参赛要求均依照活动举办方ACCA(特许公认会计师公会)JHC赛事相关规定执行，其它未尽事项可随时咨询中博教育当地教务老师。
+				</div>
+			</div>
+		</div>
+		
+		
+		<!-- 合作伙伴 -->
+		<div class="partner">
+			<p class="jhc-pub-title">2021年JHC赛事全国教育合作伙伴：</p>
+			<img src="image/logo-zbg.png" class="logo-zbg" alt="">
+			<p class="sub-partner">2021年JHC赛事、实习全国合作伙伴：</p>
+			<img src="image/logo-img1.png" class="logo-img1" alt="">
+			<p class="sub-partner">2021年JHC赛事在线测评合作伙伴：</p>
+			<img src="image/logo-img2.png" class="logo-img2" alt="">
+			<p class="sub-partner">2021年JHC赛事案例合作伙伴：</p>
+			<img src="image/logo-img3.png" class="logo-img3" alt="">
+			<p class="sub-partner">2021年JHC专业人力资源媒体平台</p>
+			<img src="image/logo-img4.png" class="logo-img4" alt="">
+			<p class="sub-partner">2021年JHC白金实习合作伙伴：</p>
+			<img src="image/logo-img5.png" class="logo-img5" alt="">
+			<img src="image/logo-bottom-21.png" class="logo-img6" alt="">
+		</div>
+		
+		<!-- 弹框 -->
+		<!-- <div class="modal-box210302">
+			<div class="inner-box">
+				<p>长按识别或扫描二维码上传作品吧</p>
+				<img src="image/code-modal.png" class="inner-img" alt="">
+				<p class="inner-des">关注公众号-进入活动页-右上角我要报名-填写信息+上传作品-提交等待审核-拉票</p>
+				<p class="know-btn"><button>我知道啦</button></p>
+			</div>
+		</div> -->
+	</div>
+	
+	<script>
+		$(function(){
+			 $("img").lazyload({effect: "fadeIn"});
+		})
+		
+	</script>
+</body>
+</html>
