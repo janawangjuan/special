@@ -1,0 +1,88 @@
+a{text-decoration: none; }
+.zbg-center-210118 a:focus{outline: none;background: transparent;}
+html,body,div,p,button,ul,li,input,table,a{box-sizing: border-box;margin:0;padding:0;}
+li{list-style: none;}
+.widthImg{width:100%;display: inherit;}
+.zbg-center-210118{width:100%;max-width: 750px; min-width: 320px;margin:auto;background: #fff;}
+html{font-size: 100px;}
+i{font-style: normal;}
+table{
+  border-collapse:collapse; 
+  border-spacing:0px;  	 
+ }
+/*主题部分*/
+.zbg-center-210118 .center-titleimg{width: 7.06rem; margin: auto;display: block;}
+.zbg-center-210118 .ruler-p{padding-right: 0.4rem;text-align: right;font-size: 0.16rem;margin-top: 0.15rem;}
+.zbg-center-210113 .btn-ruler{width: 1.46rem;height: 0.5rem;text-align: center;display: inline-block;outline: none; border:2px solid #ffe174;border-radius: 0.18rem;color: #ffe174;font-size: 0.18rem;font-weight: 700;letter-spacing: 0.01rem;background: transparent;animation: toBig 1s linear infinite;}
+
+/*banner*/
+.zbg-center-210118 .banner{position: relative;}
+.zbg-center-210118 .banner .ban-txt{position: absolute;left:0;top:0;width:100%;height: 100%;font-size: 0.16rem; padding:0.55rem;}
+.ban-logo{width: 2.75rem;margin-bottom: 0.55rem;}
+.ban-title{text-align: center;display: block;width:6.35rem;border:2px solid #fff;margin:0 auto 0.5rem;padding:0.15rem 0.2rem; color: #fff;font-size: 0.5rem;font-weight: 700; letter-spacing: 0.04rem;}
+.ban-title>span{color: #fcab06;letter-spacing: 0.03rem;}
+.ban-sub{color: #fff;font-size: 0.36rem;text-align: center;margin-bottom: 0.6rem;letter-spacing: 0.03rem;}
+.ban-btn{text-align: center;}
+.ban-btn>button{display: inline-block;width:2.85rem;height: 0.77rem;border-radius: 0.12rem;outline: none;border:none;background-color: #fcdc06;color:#333;letter-spacing: 0.02rem;font-size: 0.32rem;}
+
+/*系统审核*/
+.zbg-center-210118 .main-center .section .title-img{display: block;margin:auto}
+.zbg-center-210118 .main-center .title-1{width: 6.02rem;}
+.section-1{padding-top:0.8rem;padding-bottom: 0.75rem;}
+.examine{display: flex; flex-direction: row;justify-content: space-between;flex-wrap: wrap;margin-top:0.4rem;padding:0 0.25rem;}
+.examine .exa-item{width:2.2rem;height: 1.24rem;text-align: center;line-height: 1.24rem;color: #153256;font-size: 0.36rem; margin-bottom: 0.18rem; box-shadow: 0 0 0.14rem 0 #dcdce1;}
+.exam-btn{text-align: center; font-size: 0.16rem;margin-top:0.6rem;}
+.exam-btn button{width: 5.95rem;height: 0.97rem;border-radius: 0.12rem;background-color: #f4c042; color: #000000; font-size: 0.4rem;outline: none;border: none;letter-spacing: 0.01rem;}
+
+/*免考*/
+.zbg-center-210118 .main-center .section-2 .title-2{width: 4.82rem;margin-bottom: 0.5rem;}
+.section-2{background: #f1f1f1;padding-top:0.79rem;font-size: 0.16rem; padding-bottom: 0.66rem;}
+.no-table{Width:6.9rem;margin:auto;box-shadow: 0 0 0.07rem 0 #CCCCCC;background-color: #fff;}
+.no-table .table-item{Width:100%;display: flex;flex-direction: row;justify-content: space-between;text-align: center;align-content: center; color: #153256;letter-spacing: 0.01rem; border-bottom: 2px solid #e5e5e5;}
+.no-table .table-item:nth-last-child(1){border-bottom: none;}
+.td-1{width: 1.97rem;height: 1.5rem;font-size: 0.34rem;line-height: 1.5rem; border-right: 2px solid #e5e5e5;}
+.td-1>i{font-weight: 700;}
+.td-2{width:3.15rem;padding-top:0.45rem;line-height: 0.35rem;font-size: 0.24rem;text-align: left;padding-left: 0.25rem;}
+.td-2.noMar{padding-top:0.21rem;}
+.td-3{padding:0.2rem;}
+.td-3>a{display: inline-block;width:1.5rem;height: 1.09rem; background-color: #f4c042; color: #000; font-size: 0.26rem;padding-top:0.2rem;border-radius: 0.12rem;}
+
+/*报考指南*/
+.section-3{padding-top: 0.8rem;padding-bottom: 0.6rem; background:url(../image/sect3-bg.jpg) no-repeat center/contain; background-position: left bottom;}
+.zbg-center-210118 .main-center .section-3 .title-3{width:4.12rem; margin-bottom: 0.6rem;}
+.section-3 .guide-p{text-align: center; font-size: 0.28rem; color: #153256;letter-spacing: 0.04rem;margin-bottom: 0.6rem;}
+.section-3 .guide-p>span{color: #efa900;font-size: 0.34rem;}
+.section-3 .guid-ul{color: #153256; font-size: 0.28rem;width: 5.35rem;margin: auto;}
+.section-3 .guid-ul li{position: relative;padding-left:0.23rem;letter-spacing: 0.02rem;margin-bottom: 0.25rem;line-height: 0.36rem;}
+.section-3 .guid-ul li.marBot{margin-bottom: 0.15rem;}
+.ask-btn{color: #153256;border-radius: 0.12rem; display: inline-block;padding:0.15rem 0.2rem;background-color: #f4c042; }
+.section-3 .guid-ul li.liSpan>span{line-height: 0.57rem;}
+.section-3 .guid-ul li>span{position: absolute;top:0rem;font-weight: 900;left: 0;font-size: 0.4rem;line-height: 0.34rem;}
+
+/*报考指南*/
+.section-4{padding-top: 0.8rem;padding-bottom: 0.7rem;}
+.zbg-center-210118 .main-center .section-4 .title-4{width: 5.42rem; margin-bottom: 0.6rem;}
+.question ul{width:5.9rem; margin: auto;}
+.question ul li{text-align: left;color: #153256;font-size: 0.28rem;letter-spacing: 0.02rem;margin-bottom: 0.3rem;}
+.question ul li>span{color: #d69200;}
+
+/*资料领取*/
+.section-5{background-color: #f2f2f2;padding-top:0.77rem;padding-bottom: 0.5rem;}
+.zbg-center-210118 .main-center .section-5 .title-5{width: 6.51rem;margin-bottom: 0.77rem;}
+.file-all{width: 6.8rem;background-color: #fff; margin: auto;}
+.file-all .file-item{height: 0.96rem;line-height: 0.96rem;position: relative;color: #153256; font-size: 0.24rem; border-bottom: 2px solid #e3e3e3;padding-left: 0.25rem;}
+.file-all .file-item:nth-last-child(1){border-bottom: none;}
+.file-all .file-item>a{display: inline-block;float: right; padding: 0rem 0.4rem;background-color: #f4c042;height: 0.6rem; line-height: 0.6rem; color: #153256; border-radius: 0.12rem;font-size: 0.28rem; position: absolute;top:50%;transform: translateY(-50%);right: 0.2rem;}
+.file-bot{color: #304969;font-size: 0.22rem;text-align: center;margin-top:0.45rem;letter-spacing: 0.01rem;}
+
+/*教育机构*/
+.section-6 {padding-top:0.8rem;padding-bottom:2rem;background-color: #fff;}
+.section-6 .title-6{width:6.27rem;}
+.educat{padding-bottom:1.53rem; margin-top: 0.5rem;position: relative;}
+.educat .ed-txt{width: 6.7rem;background-color: #fff;padding:0.4rem 0.3rem;border-radius: 0.12rem;color: #000000;text-align: center;line-height: 0.4rem;font-size: 0.27rem;position: absolute;left:50%;transform: translateX(-50%);bottom: 0;box-shadow: 0 0 0.14rem 0 #dcdce1;}
+
+/*固定*/
+.post-left{position: fixed;top:30%;left: 0;width: 1.34rem;height: 3.79rem;}
+.pos-bottom{position: fixed;bottom: 0;left:0;width: 100%;max-width: 750px;left:50%;transform: translateX(-50%);}
+
+
