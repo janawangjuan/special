@@ -1,0 +1,92 @@
+* { margin: 0px; padding: 0px; -webkit-box-sizing: border-box; box-sizing: border-box; font-family: "microsoft Yahei", "Arial", sans-serif; }
+
+body { background: #f8f8f8; }
+
+a { text-decoration: none; color: #333; }
+
+li, ul { list-style: none; }
+
+i { font-style: normal; }
+
+.translateX { position: absolute; left: 50%; -webkit-transform: translateX(-50%); -ms-transform: translateX(-50%); transform: translateX(-50%); }
+
+.clearfix::after { content: ''; display: block; clear: both; height: 0; line-height: 0; overflow: hidden; font-size: 0; }
+
+.help-11-14 { background: #191429; width: 100%; max-width: 750px; min-width: 320px; margin: auto; }
+
+.help-11-14 .banner { position: relative; }
+
+.help-11-14 .banner .image-bg{width:100%;display: inherit;}
+
+.help-11-14 .banner .banner-head { position: absolute; width: 100%; left: 0px; text-align: center; top: 25%; color: #fff; font-size: 18px; letter-spacing: 1px; }
+
+.help-11-14 .banner .banner-head .head-img { width: 24%; margin-bottom: 5px; border-radius: 100px; border:3px solid #fff;}
+
+.help-11-14 .banner .banner-head .nick-name span { display: inline-block; width: 60%; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; font-size:14px;}
+
+.help-11-14 .form-info .banner-form { position: absolute; bottom: 0%; width: 100%; text-align: center; }
+
+.help-11-14 .form-info .banner-form .form-input { width: 78.333%; margin:auto; position: relative; }
+.help-11-14 .form-info .banner-form .form-input.marB{ margin-bottom:3%;}
+
+.help-11-14 .btn-div{position: relative;}
+
+.help-11-14 .btn-div .friend-btn-bg{width:100%;display:inherit}
+
+.help-11-14 .btn-div>button{width: 50%;border:none;outline: none; top:30%;}
+
+.help-11-14 .btn-div>button>img{width:100%}
+
+/*.help-11-14 .btn-div .btn-one{top:10%; }*/
+
+/*.help-11-14 .btn-div .btn-two{top:50%;;}*/
+
+.help-11-14 .form-info .banner-form .form-input .code-btn { position: absolute; color: #de5539; border: 1px solid #de5539; font-size: 13px; padding: 4px 12px; right: 2%; border-radius: 40px; outline: none; background: transparent; top: 50%; -webkit-transform: translateY(-50%); -ms-transform: translateY(-50%); transform: translateY(-50%); }
+
+.help-11-14 .form-info .banner-form .form-input input { outline: none; border: 1px solid #fff;border-top:none; border-radius: 40px; width: 100%; height: 40px; padding-left: 7%; background: #fff; box-shadow: -1px -1px 1px  #ccc;}
+
+.help-11-14 .form-info .banner-form input::-webkit-input-placeholder{color: #333;}
+
+.help-11-14 .form-info .banner-form .form-btn { width: 93.333%; text-align: center; margin: auto; }
+.help-11-14 .form-info .banner-form .form-btn.toActive{margin-top:6%;}
+
+.help-11-14 .form-info .banner-form .form-btn button { outline: none; border: none; background: transparent; }
+
+.help-11-14 .form-info .banner-form .form-btn button img { width: 100%; }
+
+.help-11-14 .form-info{width:100%;position:relative;}
+
+.help-11-14 .form-info .help-active-bg{width:100%;display: inherit;}
+
+.help-11-14 .ruler-box {background:#3a2578;padding-top:40px;}
+
+.help-11-14 .ruler-box .image-bg{width:40%;top:-3%;}
+
+
+.help-11-14 .ruler-box .ruler-bgc-fff{width:90%;background:#fff;margin:auto; border-radius: 12px; padding:10% 2.5% 2.5%; position: relative;}
+
+.help-11-14 .ruler-box .ruler-center {width:100%;margin:auto; font-size: 13px; line-height: 22px; color: #fff; background:#3d2fb4; border-radius: 12px; padding:20px 7px 20px 0; }
+
+.help-11-14 .ruler-box .ruler-center p { padding-left: 10%; margin-bottom: 8px; position: relative; }
+
+.help-11-14 .ruler-box .ruler-center p .list { background: #ffd101; position: absolute; top: 4px; font-weight: 700; left: -5px; line-height: 15px; padding: 0px 4px; color: #2a2241; }
+
+.tip-modal { position: fixed; top: 0; left: 0; display: none; z-index: 33; width: 100%; height: 100%; }
+
+.tip-modal .weak-tip { position: absolute; left: 50%; top: 50%; -webkit-transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%); transform: translate(-50%, -50%); border: 2px solid #000; background: rgba(0, 0, 0, 0.8); color: #fff; width: auto; padding: 6px 25px; border-radius: 3px; }
+
+.tip-modal .weak-tip.white { background: transparent; border: none; }
+
+.tip-modal .weak-tip.white #wealTip { display: none; }
+
+.tip-modal .weak-tip.white .loadingImg { display: block; }
+
+.tip-modal .weak-tip .loadingImg { display: none; -webkit-transition: all 2s; transition: all 2s; width: 40px; -webkit-animation: mymove 2s infinite linear; animation: mymove 2s infinite linear; }
+
+@-webkit-keyframes mymove { from { -webkit-transform: rotate(0); transform: rotate(0); }
+  to { -webkit-transform: rotate(360deg); transform: rotate(360deg); } }
+
+@keyframes mymove { from { -webkit-transform: rotate(0); transform: rotate(0); }
+  to { -webkit-transform: rotate(360deg); transform: rotate(360deg); } }
+
+.help-11-14 .banner .banner-form .form-btn button img{ width:80%; }
