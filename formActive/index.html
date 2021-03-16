@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="zh">
+	<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;" name="viewport">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>ACCA优播课</title>
+	<style>
+		div,body,html,img,p,input,button,h2{padding:0;margin:0;box-sizing: border-box;}
+		body,html{height:100%;overflow: hidden; font-family: "microsoft Yahei", "Arial", sans-serif; ;}
+		.acca-con-1015{width:100%;height:100%;overflow: hidden; max-width:750px;min-width:320px;width:100%;margin: auto;}
+		.acca-con-1015 .background-pic{width:100%;}
+		.acca-con-1015 .acca-bg-modal{position: fixed;width:100%;height: 100%;background:rgba(0,0,0,0.5);left:0;top:0;}
+		.acca-con-1015 .acca-bg-modal .modal-inner{position: absolute;left:50%;top:50%;transform: translate(-50%,-50%);background-color:#fff;border-radius: 12px;padding:35px 10px 20px;width:80%;max-width: 500px;}
+		.acca-con-1015 .acca-bg-modal .modal-inner .title{text-align: center;color:#e03337;font-size:15px;letter-spacing: 1px;}
+		.input-box {height: 35px; font-size:12px;width:90%;margin:0 auto;}
+		.input-box.phone{margin-top:20px;}
+		.input-box.code>input{float:left;width:45%;outline: none;background-color:#f2f2f2; border-radius: 4px;border:none;height: 35px;padding-left:7px;}
+		.input-box.code>button{padding:0;margin:0;}
+		.btnsend{width:30%;border:none;color:#fff;border-radius: 4px;background:#feba00; float: right;height: 35px; white-space: nowrap;border:none;outline: none;}
+		.input-box.phone>input{float:left;width:75%;outline: none;background-color:#f2f2f2; border-radius: 4px;border:none;height: 35px;padding-left:7px;}
+		.label{width:22%;font-size:12px;display: inline-block;line-height: 35px;float: left;}
+		.tip-error{color:#e03337;text-align: left;padding-left:70px;font-size:12px; height: 20px;margin-bottom:6px;}
+		.button-box{text-align: center;margin-top:12px;}
+		.button-box button{width:140px;height: 35px;border:none;outline: none;background:#f34c50;color:#fff;border-radius: 40px;letter-spacing: 2px;}
+		.acca-con-1015 .acca-bg-modal .modal-inner.loading{display: none;align-items: center; justify-content: center;height: 60%;background:transparent;}
+		.acca-con-1015 .acca-bg-modal .modal-inner.login{display: block;}
+		.loading .loadingImg {  -webkit-transition: all 2s; transition: all 2s; width: 40px; -webkit-animation: mymove 2s infinite linear; animation: mymove 2s infinite linear; }
+
+		@keyframes mymove { from { -webkit-transform: rotate(0); transform: rotate(0); }
+  to { -webkit-transform: rotate(360deg); transform: rotate(360deg); } }
+	</style>
+</head>
+<body style="">
+	<div class="acca-con-1015">
+		<img src="img/backgroud-pic.jpg" class="background-pic" alt="">
+		<div class="acca-bg-modal">
+			<div class="modal-inner login">
+				<h2 class="title">请登录领取课程</h2>
+				<div class="input-box phone">
+					<span class="label">手机</span>
+					<input type="text" placeholder="请输入您的手机号" id="phone1019">
+				</div>
+				<p class="tip-error phone-error"></p>
+				<div class="input-box code">
+					<span class="label">验证码</span>
+					<input type="text" id="code1019" placeholder="请输入验证码">
+					<button class="btnsend">获取验证码</button>
+				</div>
+				<p class="tip-error code-error"></p>
+				<div class="button-box">
+					<button id="login1019">登录</button>
+				</div>
+			</div>
+			<div class="modal-inner loading">
+				<img src="img/icon-loading2.png" class="loadingImg" alt="">
+			</div>
+		</div>
+	</div>
+	<script src="https://www.zbgedu.com/staticall/js/common/jquery.min.js"></script>
+	<script>
+		$(function(){
+			var apiUrl = "https://accahelper.zbgedu.com";
+			$('.tip-error').html('')
+			//点击发送验证码
+			$(document).on('click','.btnsend',function(){
+				var phone = $('#phone1019').val()
+				if(isPhone(phone)){
+					$('.phone-error').html("")
+					countDown(60,phone)
+				}else{
+					$('.phone-error').html('* 请输入正确的手机号')
+				}
+			})
+			//倒计时60s
+			function countDown(time,phone) { //倒计时
+				var codeTxt = $('.btnsend').html().replace(/\s+/g,"")
+			    if (codeTxt != '获取验证码')
+			    return false;
+			    $('.btnsend').html(time+'s')
+			    var timers = setInterval(function () {
+			      time--
+			      $('.btnsend').html(time+'s')
+			      if (time == 0) {
+			        clearInterval(timers)
+			        $('.btnsend').html('获取验证码')
+			      }
+			    }, 1000)
+			    $.ajax({
+			    	type:"POST",
+			    	dataType:'json',
+			    	url:apiUrl+"/api/user/getSmsVcode.do",
+			    	contentType: "application/json;charset=UTF-8",
+			    	async:true,
+			    	data:JSON.stringify({
+				    	phone: phone
+				    }),
+				    success:function(res){
+				    	if (res.respCode == 0) {
+				    		$('.code-error').html("")
+					    } else {
+					    	$('.code-error').html("* "+res.respDesc)
+					    }
+				    }
+			    });
+		  	}
+			//点击登录
+			$(document).on('click','#login1019',function(){
+				var phone = $('#phone1019').val()
+				var code = $('#code1019').val().replace(/\s+/g,"")
+				if(isPhone(phone)){
+					$('.phone-error').html("")
+					if(code){
+						$('.code-error').html("")
+						$('.loading').css({'display':'flex'})
+						$.ajax({
+							type:"post",
+							dataType:'json',
+							url:apiUrl+"/api/user/login.do",
+							contentType: "application/json;charset=UTF-8",
+							data:JSON.stringify({
+								"activityId":"24abf5bb0eb711eb8d48506b4b4a9882",  
+								"phone": phone,  
+								"smsVcode": code,  
+								"source": 0
+							}),
+							success:function(res){
+								$('.loading').hide()
+								if(res.respCode=='0'){
+									$('.code-error').html("")
+									$('#phone1019').val("")
+									$('#code1019').val("")
+									window.location.href="https://m.zbgedu.com/course-623.html"
+								}else{
+									$('.code-error').html("* "+res.respDesc)
+								}
+							}
+						})
+					}else{
+						$('.code-error').html('* 验证码不能为空')
+					}
+				}else{
+					$('.phone-error').html('* 请输入正确的手机号')
+				}
+			})
+			
+			//验证手机号
+			function isPhone(phone){
+				phone = phone.replace(/\s+/g,"")
+				return /^1[3456789]\d{9}$/.test(phone)
+			}
+		})
+	</script>
+
+</body></html>
