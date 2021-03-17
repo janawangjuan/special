@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8" />
+	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;" name="viewport" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<title>jhc</title>
+	<meta name="Description" content=""/>
+	<meta name="Keywords" content=""/>
+	<style>
+		body{margin: 0;padding:0;}
+		.jhc-wap-0317{font-size: 0;width: 100%; max-width: 750px;min-width: 320px;margin: auto;}
+		.jhc-wap-0317>img{width: 100%;}
+	</style>
+</head>
+<body>
+	<div class="jhc-wap-0317">
+		<img src="img/icon-loading.png" alt="" data-src="img/jhc-wap1.jpg">
+		<img src="img/icon-loading.png" alt="" data-src="img/jhc-wap2.jpg">
+		<img src="img/icon-loading.png" alt="" data-src="img/jhc-wap3.jpg">
+		<img src="img/icon-loading.png" alt="" data-src="img/jhc-wap4.jpg">
+		<img src="img/icon-loading.png" alt="" data-src="img/jhc-wap5.jpg">
+		<img src="img/icon-loading.png" alt="" data-src="img/jhc-wap6.jpg">
+		<img src="img/icon-loading.png" alt="" data-src="img/jhc-wap7.jpg">
+		<img src="img/icon-loading.png" alt="" data-src="img/jhc-wap8.jpg">
+		<img src="img/icon-loading.png" alt="" data-src="img/jhc-wap9.jpg">
+		<img src="img/icon-loading.png" alt="" data-src="img/jhc-wap10.jpg">
+		<img src="img/icon-loading.png" alt="" data-src="img/jhc-wap11.jpg">
+		<img src="img/icon-loading.png" alt="" data-src="img/jhc-wap12.jpg">
+		<img src="img/icon-loading.png" alt="" data-src="img/jhc-wap13.jpg">
+		<img src="img/icon-loading.png" alt="" data-src="img/jhc-wap14.jpg">
+		<img src="img/icon-loading.png" alt="" data-src="img/jhc-wap15.jpg">
+		<img src="img/icon-loading.png" alt="" data-src="img/jhc-wap16.jpg">
+		<img src="img/icon-loading.png" alt="" data-src="img/jhc-wap17.jpg">
+		<img src="img/icon-loading.png" alt="" data-src="img/jhc-wap18.jpg">
+		<img src="img/icon-loading.png" alt="" data-src="img/jhc-wap19.jpg">
+		<img src="img/icon-loading.png" alt="" data-src="img/jhc-wap20.jpg">
+		<img src="img/icon-loading.png" alt="" data-src="img/jhc-wap21.jpg">
+		<img src="img/icon-loading.png" alt="" data-src="img/jhc-wap22.jpg">
+		<img src="img/icon-loading.png" alt="" data-src="img/jhc-wap23.jpg">
+		<img src="img/icon-loading.png" alt="" data-src="img/jhc-wap24.jpg">
+		<img src="img/icon-loading.png" alt="" data-src="img/jhc-wap25.jpg">
+		<img src="img/icon-loading.png" alt="" data-src="img/jhc-wap26.jpg">
+		<img src="img/icon-loading.png" alt="" data-src="img/jhc-wap27.jpg">
+		<img src="img/icon-loading.png" alt="" data-src="img/jhc-wap28.jpg">
+		<img src="img/icon-loading.png" alt="" data-src="img/jhc-wap29.jpg">
+		<img src="img/icon-loading.png" alt="" data-src="img/jhc-wap30.jpg">
+		<img src="img/icon-loading.png" alt="" data-src="img/jhc-wap31.jpg">
+		<img src="img/icon-loading.png" alt="" data-src="img/jhc-wap32.jpg">
+		<img src="img/icon-loading.png" alt="" data-src="img/jhc-wap33.jpg">
+		<img src="img/icon-loading.png" alt="" data-src="img/jhc-wap34.jpg">
+		<img src="img/icon-loading.png" alt="" data-src="img/jhc-wap35.jpg">
+	
+	</div>
+	<script src="https://www.zbgedu.com/staticall/js/common/jquery.min.js"></script>
+
+	<script>
+		start()
+		$(window).on('scroll', function(){
+			start()
+		})
+		function start(){
+			$('.jhc-wap-0317 img').not('[data-isLoaded]').each(function(){
+				var $node = $(this)
+				if(isShow($node) ){
+					 loadImg($node)
+				}
+			})
+		}
+	 
+	//判断一个元素是不是出现在窗口(视野)
+	function isShow($node){
+	 return $node.offset().top <= $(window).height() + $(window).scrollTop() +$node.height()*2
+	 // return $node.offset().top <= $(window).height() + $(window).scrollTop()
+	 }
+	//加载图片
+	 function loadImg($img){
+	$img.attr('src', $img.attr('data-src')) //把data-src的值 赋值给src
+	$img.attr('data-isLoaded', 1)//已加载的图片做标记
+	}
+	</script>
+</body>
+</html>
