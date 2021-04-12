@@ -1,0 +1,75 @@
+a{text-decoration: none; }
+.zbg-center-210118 a:focus{outline: none;background: transparent;}
+html,body,div,p,button,ul,li,input,table,a,h2{box-sizing: border-box;margin:0;padding:0;}
+li{list-style: none;}
+.widthImg{width:100%;display: inherit;}
+html{font-size: 100px;}
+i{font-style: normal;}
+table{
+  border-collapse:collapse; 
+  border-spacing:0px;  	 
+ }
+ /* 公用部分 */
+ .acca-210408 {max-width: 750px; min-width:320px;margin:auto;width:100%; font-size: 0;}
+  .acca-210408>img{width: 100%;}
+ 
+ 
+
+
+/* 立即报名 */
+.enroll{ padding-top:0.7rem;margin-bottom: 0.8rem; color: #ca9d5d;text-align: center;}
+.enroll .enroll-btn{animation: toBig 2s linear infinite; font-size: 0.32rem; padding:0.05rem 0.3rem;color: #333;background-color: #fedb63;border-radius: 40px;outline: none; border: none; font-weight: 700; left: 0.02rem; margin-bottom: 0.8rem;}
+.enroll .enroll-txt{ line-height: 0.5rem;}
+.enroll .margin-bot{margin-bottom: 0.4rem;}
+
+@keyframes toBig{
+	from{transform:translateY(-50%) scale(1);}
+	50%{transform:translateY(-50%) scale(0.8);}
+	to{transform:translateY(-50%) scale(1);}
+}
+
+/* 固定按钮 */
+.fix-btn{position: fixed; bottom:0;text-align: center;width: 100%;z-index: 100; width: 100%; max-width: 750px; min-with:320px;left:50%;transform: translateX(-50%);}
+.fix-btn>button{animation: toBig 2s linear infinite; font-size: 0; width: 95%; background-color: #fedb63;border-radius: 40px;outline: none; border: none; transform: translateY(-50%);}
+.fix-btn>button>img{width: 100%;}
+
+
+
+
+/* 弹框 */
+.modal-box210302{font-size: 0.25rem; display: none;   position: fixed;top: 0; width: 100%;background-color: rgba(0,0,0,0.5);height: 100%; max-width: 750px;left:50%;transform: translateX(-50%);z-index: 999;}
+.modal-box210302 .icon-close{position: absolute;right: 0; top:0; transform: translate(-10%,-48%); width: 0.7rem;}
+.modal-box210302 .icon-close>img{width:100%;}
+.form-title{text-align: center; font-weight: 700; font-size: 0.36rem; margin-bottom: 0.07rem; color: #fff;}
+.modal-box210302 .inner-box{position: absolute;top:50%; left:50%;transform: translate(-50%,-50%);  width:5.98rem; background:url(../img/modal-bg.png) no-repeat;background-size: 100% 100%; height: 4rem; padding-top:0.2rem; text-align: center;}
+.modal-box210302 .form{width: 5.5rem; margin: auto;  border-radius: 0.15rem; padding:0.5rem 0.4rem 0.4rem 0.4rem;}
+.modal-box210302 .form .form-input{margin-bottom: 0.24rem; position: relative;}
+.modal-box210302 .form .form-input>input{height: 0.55rem;padding-left: 0.12rem; width: 100%;outline: none; border: 1px solid #606060; border-radius: 0.07rem; background-color: #dbdbdb;}
+.from-btn{text-align: center;}
+.modal-box210302 .sendCode{position: absolute;top: 50%;transform: translateY(-50%); right: 0.1rem; outline: none; background-color: #ffdc63; color: #333; border:none; padding:0 0.12rem;}
+.from-btn>button{  
+	height: 0.57rem; border:1px solid #333;
+	width: 2.08rem;
+    font-size: 0.32rem;
+	letter-spacing: 0.03rem;
+    color: #333;
+    background-color: #fedb63;
+    border-radius: 40px;
+    outline: none;
+    left: 0.02rem;}
+	
+/*弱提示*/
+#weakTips20210113{position: fixed;left: 50%; top:0;width: 100%;height: 100%; background: transparent;z-index: 9998; display: none; max-width: 750px; transform: translateX(-50%);}
+#weakTips20210113 .tipName{position: absolute;left:50%;top:50%;transform: translate(-50%,-50%);padding:0.2rem 0.4rem;background: #00032B;border-radius: 0.12rem; color: #fff;text-align: center;font-size: 0.32rem;max-width: 70%;}
+
+/*加载中*/
+#loading20210113{position: fixed;left: 50%; top:0;width: 100%;height: 100%;z-index: 9999;background: rgba(0,0,0,0.1); display: none;max-width: 750px; transform: translateX(-50%);}
+#loading20210113 .loadingImg{position: absolute;left:50%;top:50%;transform: translate(-50%,-50%);width:0.8rem; animation: toRotate 1s linear infinite;}
+@keyframes toRotate{
+	0{transform:translate(-50%,-50%)  rotate(0);}
+	25%{transform:translate(-50%,-50%) rotate(180deg);}
+	100%{transform:translate(-50%,-50%) rotate(360deg);}
+}
+
+
+
